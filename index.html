@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container container--flex">
+
+            <a class="logo" href="#">
+                <span class="logo__label logo__label--start">Web</span><span
+                    class="logo__label logo__label--end">Studio</span>
+            </a>
+
+            <nav class="navigation">
+                <ul class="navigation__list navigation--margin-left">
+                    <li class="navigation__items navigation__items--underline navigation__items--margin-left ">
+                        <a class="navigation__links   transition-bg-color-delay" href="index.html">
+                            <p class="navigation__text">Agencja</p>
+                        </a>
+                    </li>
+                    <li class="navigation__items navigation__items--margin-left">
+                        <a class="navigation__links  transition-bg-color-delay" href="portfolio.html">
+                            <p class="navigation__text">Portfolio</p>
+                        </a>
+                    </li>
+                    <li class="navigation__items navigation__items--margin-left">
+                        <a class="navigation__links   transition-bg-color-delay" href="#">
+                            <p class="navigation__text">Kontakt</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="contacts contacts--margin-left">
+
+                <li class="contacts__items">
+
+                    <a class="contacts__links contacts__links--margin-right 
+                              transition-bg-color-delay" href="mailto:info@devstudio.com">
+                        <svg width="16" height="12">
+                            <use href="./images/icons.svg#icon-poczta"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+
+                </li>
+
+                <li class="contacts__items">
+                    <a class="contacts__links   transition-bg-color-delay" href="tel:+48111111111">
+                        <svg width="16" height="12">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                        +48 111111 111
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="hero hero--padding-top dark-bgr">
+            <h1 class="titles-hero titles-hero--margin-auto titles-hero--center">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button class="hero__button" type="button" data-modal-open>Zamów usługe</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <section class="strengths section">
+
+                <ul class="strengths__list">
+
+                    <li>
+                        <svg class="strengths__svg strengths__svg--icon-antenna">
+                            <use href="./images/icons.svg#icon-antenna" width="65.32" height="70"></use>
+                        </svg>
+
+                        <span>LOREM IPSUM</span>
+                        <p class="strengths__paragraph strengths__paragraph--margin">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nam
+                            vel
+                            arcu sem. Sed non sodales dui.
+                            Interdum et malesuada</p>
+                    </li>
+                    <li>
+                        <svg class=" strengths__svg strengths__svg--icon-clock">
+                            <use href="./images/icons.svg#icon-clock" width="66.96" height="70">
+                            </use>
+                        </svg>
+
+                        <span>LOREM IPSUM</span>
+                        <p class="strengths__paragraph strengths__paragraph--margin">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nam
+                            vel
+                            arcu sem. Sed non sodales dui.
+                            Interdum et malesuada</p>
+                    </li>
+                    <li>
+
+                        <svg class=" strengths__svg strengths__svg--icon-computer">
+                            <use href="./images/icons.svg#icon-computer" width="70" height="53.69"></use>
+                        </svg>
+
+                        <span>LOREM IPSUM</span>
+                        <p class="strengths__paragraph strengths__paragraph--margin">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nam
+                            vel
+                            arcu sem. Sed non sodales dui.
+                            Interdum et malesuada</p>
+                    </li>
+                    <li>
+
+                        <svg class=" strengths__svg strengths__svg--icon-fly">
+                            <use href="./images/icons.svg#icon-fly" width="54.83" height="60.66"></use>
+                        </svg>
+
+                        <span>LOREM IPSUM</span>
+                        <p class="strengths__paragraph strengths__paragraph--margin">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Nam
+                            vel
+                            arcu sem. Sed non sodales dui.
+                            Interdum et malesuada</p>
+                    </li>
+                </ul>
+
+                <h2 class="titles titles--center">Czym się zajmujemy</h2>
+
+                <ul class="do-photos">
+                    <li class="do-photos__items do-photos__items--margin-left"><img
+                            src="images/SqooshImgages/CzymSięZajmujemy/img1.jpg" alt="Working with tablet" width="370"
+                            height="294">
+                        <div class="do-photos__description">Aplikacje komputerowe</div>
+                    </li>
+                    <li class="do-photos__items"><img src="images/SqooshImgages/CzymSięZajmujemy/img2.jpg"
+                            alt="Working with phone and computer" width="370" height="294">
+                        <div class="do-photos__description">Aplikacje mobilne</div>
+                    </li>
+                    <li class="do-photos__items do-photos__items--margin-right"><img
+                            src="images/SqooshImgages/CzymSięZajmujemy/img3.jpg" alt="Choosing a color" width="370"
+                            height="294">
+                        <div class="do-photos__description">Rozwiązania graficzne</div>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+
+        <section class="team section container">
+
+            <h2 class="titles titles--center">Nasz zespół</h2>
+
+            <ul class="team-memders team-memders--margin team-memders--text-center">
+
+                <li class="photo-frame photo-frame--margin-first photo-frame--margin-right">
+                    <img src="images/SqooshImgages/NaszZespół/img1.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
+                    <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Product
+                        Designer</p>
+
+                    <ul class="social-svg social-svg--margin-bottom">
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-interia"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="photo-frame photo-frame--margin-right">
+                    <img src="images/SqooshImgages/NaszZespół/img2.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
+                    <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Frontend
+                        Developer</p>
+
+                    <ul class="social-svg social-svg--margin-bottom">
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-interia"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="photo-frame photo-frame--margin-right">
+                    <img src="images/SqooshImgages/NaszZespół/img3.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
+                    <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Marketing
+                    </p>
+
+                    <ul class="social-svg social-svg--margin-bottom">
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-interia"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="photo-frame photo-frame--margin-last">
+                    <img src="images/SqooshImgages/NaszZespół/img4.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
+                    <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">UI Designer
+                    </p>
+
+                    <ul class="social-svg social-svg--margin-bottom">
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-svg__link transition-bg-color-delay" href="#">
+                                <svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-interia"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </section>
+
+
+        <section class="section container">
+
+            <h2 class="titles titles--center">Nasi klienci</h2>
+
+            <ul class="client-list client-list--margin-top">
+
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg">
+                            <use href="./images/icons.svg#icon-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg">
+                            <use href="./images/icons.svg#icon-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg">
+                            <use href="./images/icons.svg#icon-3"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg">
+                            <use href="./images/icons.svg#icon-4"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg">
+                            <use href="./images/icons.svg#icon-5"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="client-list__link transition-bg-color-delay" href="#">
+                        <svg class="client-list__svg ">
+                            <use href="./images/icons.svg#icon-6"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer class="footer dark-bgr">
+
+        <div class="container container--padding container--flex">
+
+            <div class="footer-adres">
+
+                <a class="logo logo--padding-reset" href="#">
+                    <span class="logo__label logo__label--start">Web</span><span
+                        class="logo__label logo__label--dark-theme">Studio</span>
+                </a>
+
+                <address class="footer-address">
+
+                    <ul>
+                        <li class="footer-address__items footer-address__items--margin-top">
+                            Warszawa, Aleje Jerozolimskie 21
+                        </li>
+
+                        <li class="footer-address__items footer-address__items--margin-top">
+                            <a class="footer-address__link transition-bg-color-delay"href="mailto:info@devstudio.com"> 
+                            info@devstudio.com</a>
+                        </li>
+
+                        <li class="footer-address__items footer-address__items--margin-top">
+                            <a class="footer-address__link transition-bg-color-delay" href="tel:+48111111111">
+                                +48111 111111</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="footer-social footer-social--margin-left">
+
+                <h2 class="titles-footer titles-footer--margin-left">DOŁĄCZ DO NAS</h2>
+
+                <ul class="social-svg social-svg--margin-top">
+                    <li>
+                        <a class="social-svg__link social-svg__link--dark-grey-background transition-bg-color-delay"
+                            href="#">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-svg__link social-svg__link--dark-grey-background transition-bg-color-delay"
+                            href="#">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-svg__link social-svg__link--dark-grey-background transition-bg-color-delay"
+                            href="#">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-svg__link social-svg__link--dark-grey-background transition-bg-color-delay"
+                            href="#">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg#icon-interia"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-newsleter footer-newsleter--margin-left">
+
+                <form class="form-newsleter">
+                    <label for="email">
+                        <h2 class="titles-footer">Zapisz się do newslettera</h2>
+                    </label>
+
+                    <div class="footer_input_wrapper footer_input_wrapper--margin-top">
+                        <input type="text" id="email" class="form-newsleter_email form-newsleter_email--margin-top" name="email" placeholder="E-mail">
+
+                        <button type="submit"
+                            class="footer-button footer-button--position-relative footer-button--margin-top footer-button--margin-left">
+                            <span class="footer-button__text">Zapisz się</span>
+                            <svg class="footer-button__svg" height="24" width="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal modal--relative">
+            <button class="modal__button-close" data-modal-close>
+                <svg width="11" height="11">
+                    <line x1="1" y1="1" x2="10" y2="10" stroke="#000" stroke-width="2" />
+                    <line x1="10" y1="1" x2="1" y2="10" stroke="#000" stroke-width="2" />
+                </svg>
+            </button>
+
+            <h2 class="modal__title">Zostaw swoje dane w formularzu poniżej</h2>
+
+            <form name="new-data" class="form transition-bg-color-delay">
+
+                <label for="user-name" class="form__label"> Imie</label>
+
+                <div class="form__wrapper">
+
+                    <input type="text" name="name" id="user-name" class="form__input">
+                    <svg class="form__svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+
+                </div>
+
+                <!--  -->
+
+                <label for="user-phone" class="form__label">Telefon</label>
+
+                <div class="form__wrapper">
+
+                    <input type="text" name="phone" id="user-phone" class="form__input">
+                    <svg class="form__svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+
+                </div>
+
+
+                <label for="user-mail" class="form__label">Email</label>
+
+                <div class="form__wrapper">
+
+                    <input type="text" name="mail" id="user-mail" class="form__input">
+                    <svg class="form__svg transition-bg-color-delay">
+                        <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+
+                </div>
+
+
+                <label for="user-coment" class="form__label">Komentarz</label>
+                <textarea name="coment" id="user-coment" placeholder="Wprowadź tekst"
+                    class="form__textarea transition-bg-color-delay"></textarea>
+
+                <div class="form__wrapper-checkbox">
+
+                    <input type="checkbox" name="accept" id="check-conditions"
+                        class="form__input-chceckbox visually-hidden">
+                    <label for="check-conditions" class="form__label-checkbox">Oświadczam iż akceptuję <a href="#"
+                            class="form__link"><span>Regulamin</span></a> i <a href="#"
+                            class="form__link"><span>Politykę Prywatności.</span></a>
+                    </label>
+
+                </div>
+
+                <button type="submit" class="form__button">Wyślij</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>

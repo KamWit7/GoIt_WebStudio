@@ -1,0 +1,28 @@
+
+@import "./utils/variable";
+@import "./utils/keyframes";
+@import "./layout/visually-hidden";
+@import "./layout/dark-background";
+@import "./layout/transition-delay";
+@import "./layout/backdrop";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/logo";
+@import "./components/buttons";
+@import "./components/titles";
+@import "./components/social-links-svg";
+
+@import "./layout/hero";
+@import "./layout/form";
+@import "./layout/heder";
+
+@import "./layout/strengths";
+@import "./layout/what-we-do";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import "./layout/portfolio";

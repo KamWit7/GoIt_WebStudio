@@ -1,0 +1,12 @@
+.container{
+  width: 1200px;
+  margin: 0 auto;
+
+  &--padding{ 
+    padding: 60px 0;
+  }
+
+  &--flex{
+    display: flex;
+  }
+}

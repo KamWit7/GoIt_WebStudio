@@ -1,0 +1,42 @@
+.titles{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+
+  &--center{
+    text-align: center;
+  }
+
+  &-footer{
+    padding-top: 8px;
+
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    &--margin-left{
+      margin-left: 10px;
+    }
+  }
+
+  &-hero{
+    height: 120px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    &--margin-auto{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &--center{
+      text-align: center;
+    }
+  }
+}

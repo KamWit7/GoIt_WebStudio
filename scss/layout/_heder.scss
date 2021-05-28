@@ -1,0 +1,83 @@
+@import '../utils/variable';
+
+.header{
+  &--underline{
+    border: 1px solid getColor(under-line);
+  }
+}
+
+.navigation{
+  font-weight: 500;
+  font-size: 14px;
+  line-height:1.143;
+  letter-spacing: 0.02em;
+
+  &__list{
+    display: flex;
+    
+  }
+
+  &--margin-left{
+    margin-left: 93px;
+  }
+
+  &__items{
+    position: relative;
+    padding: 34px 0;
+
+    &--margin-left{
+      margin-left: 46px;
+    }
+    
+    &--underline > a::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 53px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: getColor(active);
+    }
+  }
+  
+  &__links{
+    color: getColor(font-dark);
+
+    &:hover,
+    &:active{
+      color: getColor(active);
+    }
+  }
+  
+  &__text{
+    margin: 0;
+  }
+}
+
+.contacts{
+  display: flex;
+
+  &--margin-left{
+      margin-left: auto;
+  }
+
+  &__items{
+    padding: 32px 0;
+  }
+
+  &__links{
+  color: getColor(font-grey);
+   fill: getColor(font-grey);
+
+    &:hover,
+    &:active{
+      color: getColor(active);
+      fill: getColor(active);
+    }
+
+    &--margin-right{
+      margin-right: 50px;
+    }
+  }
+  
+}

@@ -1,0 +1,56 @@
+@import '../utils/variable';
+
+.strengths{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  &__list{
+    display: flex;
+    justify-content: center;
+  } 
+
+  &__svg{
+    box-sizing: border-box;
+    width: 270px;
+    height: 120px;
+    background-color: getColor(button-bg);
+    border-radius: 4px;
+    padding: 29px auto; 
+  
+    margin-bottom: 30px;
+
+    
+    &--icon-antenna{
+      padding: 25px 102px; 
+    }
+
+    &--icon-clock{
+      padding: 25px 101.5px; 
+    }
+
+    &--icon-computer{
+      padding: 33.2px 100px 33.11px; 
+    }
+
+    &--icon-fly{
+      padding: 30.23px 115.17px 29.11px 100px; 
+    }
+  }
+
+  &__paragraph{
+    font-weight: 500;
+    line-height: 1.714;
+    width: 270px;
+    height: 75px;
+  
+    color: getColor(font-dark);
+
+    &--margin{
+      margin-top:10px;
+      margin-right: 30px;
+      margin-bottom: 94px;
+    }
+  }
+
+}
