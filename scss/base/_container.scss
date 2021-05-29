@@ -1,12 +1,43 @@
 .container{
-  width: 1200px;
+  width: 480px;
   margin: 0 auto;
 
-  &--padding{ 
-    padding: 60px 0;
-  }
+//   &--padding{ 
+//     padding: 60px 0;
+//   }
 
-  &--flex{
-    display: flex;
-  }
+//   &--flex{
+//     display: flex;
+//   }
+}
+
+@media screen and (min-width: 786px)
+and (max-width: 1200px){
+    
+    .container{
+    width: 786px;
+    margin: 0 auto;
+
+    // &--padding{ 
+    //     padding: 60px 0;
+    // }
+
+    // &--flex{
+    //     display: flex;
+    // }
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+
+        &--padding{ 
+            padding: 60px 0;
+        }
+
+        &--flex{
+            display: flex;
+        }
+    }
 }

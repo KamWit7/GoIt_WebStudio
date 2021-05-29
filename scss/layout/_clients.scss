@@ -3,6 +3,7 @@
 .client-list{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
   &--margin-top{
      margin-top: 50px;
@@ -13,7 +14,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     
     box-sizing: border-box;
@@ -27,6 +28,19 @@
       fill: getColor(active);
     }
 
+    &--margin {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    &--margin-top {
+      margin-top: 15px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 15px;
+    }
+
   }
 
   &__svg{
@@ -35,4 +49,23 @@
   }
 }
 
+@media screen and (min-width: 768px)
+and (max-width: 1200px){
+  .client-list{
+    &__link{
+      width: 226px;
+      height: 92px; 
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+   .client-list{
+
+    &__link{
+      width: 170px;
+      height: 92px; 
+    }
+  }
+}
 

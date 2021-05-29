@@ -1,50 +1,37 @@
-@import '../utils/variable';
+@import "../utils/variable";
 
-.team{
+.team {
   min-width: 100%;
   background-color: getColor(button-bg);
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.188;
-  
 }
 
-.team-memders{
+.team-members {
   display: flex;
   justify-content: center;
-  
-  &--margin{
-    margin: 50px 0;
-  }
+  flex-wrap: wrap;
 
-  &--text-center{
+  &--text-center {
     text-align: center;
   }
 }
 
-.photo-frame{
-  overflow: hidden;
-  width: 270px;
- 
+.photo-frame {
+  width: 450px;
+  display: inline-block;
+
   background-color: getColor(main-bg);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &--margin-right{
-    margin-right: 30px;
+  &--margin {
+    margin: 30px 15px;
   }
 
-  &--margin-first{
-    margin-left: 15px;
-  }
-
-  &--margin-last{
-     margin-right: 15px;
-  }
-
-  &__employe{
+  &__employe {
     display: inline-block;
     width: 72px;
     height: 19px;
@@ -54,25 +41,61 @@
     font-weight: 500;
     color: var(--main-color);
 
-    &--margin-top{
+    &--margin-top {
       margin-top: 30px;
     }
-
   }
 
-  &__job{
-    color: getColor(font-dark);
-   
-    &--margin-top{
+  &__job {
+    color: getColor(font-grey);
+
+    &--margin-top {
       margin-top: 10px;
     }
 
-    &--margin-bottom{
+    &--margin-bottom {
       margin-bottom: 30px;
     }
   }
 }
 
+@media screen and(min-width: 768px) and (max-width: 1200px) {
+  .photo-frame {
+    width: 354px;
 
+    &--margin {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
 
+    &--margin-top {
+      margin-top: 15px;
+    }
 
+    &--margin-bottom {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .team-members {
+    flex-wrap: nowrap;
+
+    &--margin {
+      margin: 50px 0;
+    }
+
+    &--text-center {
+      text-align: center;
+    }
+  }
+
+  .photo-frame {
+    width: 270px;
+
+    &--margin {
+      margin: 0 15px;
+    }
+  }
+}

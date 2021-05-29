@@ -1,8 +1,25 @@
 @import '../utils/variable';
-.do-photos{
-  display: flex;
-  position: relative;
 
+.do-photos{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 1200px){
+  .do-photos{
+    display: flex;
+    width: 370px;
+    height: 294px;
+    position: relative;
+    overflow: visible;
+   
   &__items{
     margin-top: 50px;
     margin-right: 30px;
@@ -17,7 +34,7 @@
 
   &__description{
     position: absolute;
-    bottom: 0px;
+    bottom: -50px; //Przez padnig top 50px
     width: 370px;
     height: 70px;
     box-sizing: border-box;
@@ -30,3 +47,9 @@
     
   }
 }
+
+
+
+
+}
+
