@@ -11,7 +11,6 @@
   overflow: hidden;
 }
 
-
 @media screen and (min-width: 1200px){
   .do-photos{
     display: flex;
@@ -20,21 +19,22 @@
     position: relative;
     overflow: visible;
    
-  &__items{
-    margin-top: 50px;
-    margin-right: 30px;
-
-    &--margin-left{
+  &__wrapper{
+     &--margin-left{
        margin-left: 15px;
     }
     &--margin-right{
       margin-right: 15px;
     }
-  }
+  }  
+
+  // &__items{
+
+  // }
 
   &__description{
     position: absolute;
-    bottom: -50px; //Przez padnig top 50px
+    bottom: 0;
     width: 370px;
     height: 70px;
     box-sizing: border-box;

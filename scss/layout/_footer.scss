@@ -1,58 +1,132 @@
-@import '../utils/variable';
+@import "../utils/variable";
 
-.footer-address{
+.footer-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  
   color: getColor(font-light-transparent);
 
-  &__link{
-    color: getColor(font-light-transparent);
+  &--center {
+    text-align: center;
+  }
 
+  &__link {
+    color: getColor(font-light-transparent);
     &:hover,
-    &:active{
-       color: getColor(active);
+    &:active {
+      color: getColor(active);
     }
   }
 
-  &__items{
-    &--margin-top{
+  &__items {
+    &--light-color {
+      color: getColor(font-light);
+    }
+    &--margin-top {
       margin-top: 9px;
     }
   }
 }
 
-.footer-social{
-  &--margin-left{margin-left: 70px;}
+.footer-social {
+  text-align: center;
+
+  &--margin-top{
+    margin-top: 60px;
+  }
 }
 
-.footer-newsleter{
-  &--margin-left{ margin-left: 80px;}
+.footer-newsleter {
+  text-align: center;
+
+  &--margin-top{
+    margin-top: 60px;
+  }
 }
 
-.form-newsleter{
-  &_email{
-    box-sizing:border-box;
+.footer_input_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-newsleter {
+  &_email {
+    box-sizing: border-box;
     width: 358px;
     height: 50px;
     background-color: inherit;
     padding: 15px 16px;
     color: getColor(font-light-transparent);
-    
 
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    
-    &--margin-top{
+
+    &--margin-top {
       margin-top: 20px;
     }
   }
 }
 
-.footer_input_wrapper{
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+  .footer-address {
+    &--padding-left{
+      padding-left: 15px;
+    }
+  }
+  .footer-social {
+    &--padding-right{
+      padding-right: 15px;
+    }
+
+    &--margin-top{
+      margin-top: 0;
+    }
+  }
+
+  .footer-newsleter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-newsleter{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    &--center {
+      text-align: start;
+    }
+  }
+
+  .footer-social {
+    text-align: start;
+
+    &--margin-top{
+    margin-top: 0;
+    }
+
+    &--margin-left {
+      margin-left: 70px;
+    }
+  }
+
+  .footer-newsleter {
+    text-align: start;
+
+    &--margin-top{
+    margin-top: 0;
+    }
+
+    &--margin-left {
+      margin-left: 80px;
+    }
+  }
+}

@@ -9,6 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  
   }
 
   &__text{
@@ -28,10 +29,23 @@
     background-color: getColor(button-bg);
     border-radius: 4px;
 
-    &--margin{
-      margin-bottom: 30px;
+    &--margin-top{
       margin-top: 30px;
     }
+    &--margin-bottom{
+      margin-bottom: 30px;
+    }
+
+    &--margin-first-element{
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+
+     &--margin-second-element{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
 
     &--icon-antenna{
       padding: 25px 192.34px; 
@@ -92,6 +106,16 @@ and (max-width: 1200px){
       margin-bottom: 30px;
     }
 
+    &--margin-first-element{
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    
+    &--margin-second-element{
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
     &--icon-antenna{
       padding: 25px 144.34px; 
     }
@@ -141,7 +165,11 @@ and (max-width: 1200px){
     height: 120px;
     background-color: getColor(button-bg);
   
-    
+    &--margin-first-element{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
     &--icon-antenna{
       padding: 25px 102px; 
     }
