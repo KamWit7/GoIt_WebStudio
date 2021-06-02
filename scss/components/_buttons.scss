@@ -68,7 +68,7 @@
 
 .modal__button-close {
   box-sizing: border-box;
-
+  stroke: getColor(font-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,9 +85,11 @@
   border-radius: 50%;
 
   &:hover {
+    stroke: getColor(active);
     animation: puls 2000ms infinite 250ms;
   }
 }
+
 
 .portfolio__button {
   font-weight: 500;
