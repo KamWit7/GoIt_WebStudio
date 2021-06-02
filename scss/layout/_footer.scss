@@ -32,7 +32,7 @@
 .footer-social {
   text-align: center;
 
-  &--margin-top{
+  &--margin-top {
     margin-top: 60px;
   }
 }
@@ -40,7 +40,7 @@
 .footer-newsleter {
   text-align: center;
 
-  &--margin-top{
+  &--margin-top {
     margin-top: 60px;
   }
 }
@@ -54,7 +54,7 @@
 .form-newsleter {
   &_email {
     box-sizing: border-box;
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: inherit;
     padding: 15px 16px;
@@ -71,18 +71,17 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-
   .footer-address {
-    &--padding-left{
+    &--padding-left {
       padding-left: 15px;
     }
   }
   .footer-social {
-    &--padding-right{
+    &--padding-right {
       padding-right: 15px;
     }
 
-    &--margin-top{
+    &--margin-top {
       margin-top: 0;
     }
   }
@@ -92,7 +91,7 @@
     margin-right: auto;
   }
 
-  .form-newsleter{
+  .form-newsleter {
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -109,20 +108,24 @@
   .footer-social {
     text-align: start;
 
-    &--margin-top{
-    margin-top: 0;
+    &--margin-top {
+      margin-top: 0;
     }
 
     &--margin-left {
       margin-left: 70px;
     }
   }
-
+  .form-newsleter {
+    &_email {
+      width: 358px;
+    }
+  }
   .footer-newsleter {
     text-align: start;
 
-    &--margin-top{
-    margin-top: 0;
+    &--margin-top {
+      margin-top: 0;
     }
 
     &--margin-left {

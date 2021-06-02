@@ -76,7 +76,6 @@
   .photo-frame {
     width: 354px;
 
-
     &--margin-first-element {
       margin: 30px 15px 15px 15px;
     }
@@ -107,8 +106,20 @@
   .photo-frame {
     width: 270px;
 
+    &--margin-first-element {
+       margin: 15px 15px 0;
+    }
+
+    &--margin-second-element {
+      margin: 15px 15px 0;
+    }
+
+    &--margin-penultimate-element {
+      margin: 15px 15px 0;
+    }
+
     &--margin-last-element {
-      margin: 15px;
+      margin: 15px 15px 0;
     }
   }
 }

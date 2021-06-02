@@ -1,7 +1,7 @@
-.titles{
+.titles {
   display: none;
 
-  &-hero{
+  &-hero {
     height: 84px;
     width: 365px;
 
@@ -11,56 +11,55 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    &--center{
+    &--center {
       text-align: center;
     }
 
-    &--margin-auto{
+    &--margin-auto {
       margin-left: auto;
       margin-right: auto;
     }
   }
 
-  &-what-we-do{
+  &-what-we-do {
     display: none;
   }
 
-  &-team{
+  &-team {
     font-weight: 700;
     font-size: 28px;
-    line-height:1.178;
+    line-height: 1.178;
 
     letter-spacing: 0.03em;
 
-    &--center{
+    &--center {
       text-align: center;
     }
 
-    &--margin-bottom{
+    &--margin-bottom {
       margin-bottom: 0;
     }
-
   }
 
-  &-client{
-    display: block; 
+  &-client {
+    display: block;
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.178;
     letter-spacing: 0.03em;
 
-    &--center{
+    &--center {
       text-align: center;
     }
 
-    &--margin-auto{
+    &--margin-auto {
       margin-left: auto;
       margin-right: auto;
     }
   }
 
- &-footer{
+  &-footer {
     padding-top: 8px;
 
     font-size: 14px;
@@ -68,34 +67,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    &--margin-left{
+    &--margin-left {
       margin-left: 10px;
     }
   }
-
 }
 
-// @media screen and (min-width: 768px)
-// and (max-width: 1200px){
-//   .titles{
-     
-//   }
-// }
-
-@media screen and (min-width: 1200px){
-  
-  .titles{
- 
-    &-hero{
+@media screen and (min-width: 1200px) {
+  .titles {
+    &-hero {
       height: 120px;
       width: 696px;
 
       font-size: 44px;
       line-height: 1.364;
-    
     }
 
-    &-what-we-do{
+    &-what-we-do {
       display: block;
       font-style: normal;
       font-weight: 700;
@@ -103,41 +91,28 @@
       line-height: 1.166;
       letter-spacing: 0.03em;
 
-      &--center{
+      &--center {
         text-align: center;
       }
 
-      &--margin-bottom{
+      &--margin-bottom {
         margin-bottom: 50px;
       }
     }
 
-    &-team{
+    &-team {
       display: block;
       font-size: 36px;
       line-height: 1.167;
 
-      &--margin-bottom{
+      &--margin-bottom {
         margin-bottom: 50px;
       }
     }
 
-    &-client{
+    &-client {
       font-size: 36px;
       line-height: 1.166;
-    }
-
-    &-footer{
-      padding-top: 8px;
-
-      font-size: 14px;
-      line-height: 1.143;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-
-      &--margin-left{
-        margin-left: 10px;
-      }
     }
   }
 }

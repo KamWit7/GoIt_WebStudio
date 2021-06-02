@@ -12,7 +12,6 @@
   font-family: getFont(second-raleway);
 
   &__label{
-
     &--start{
     color: getColor(active);
     }
@@ -24,10 +23,8 @@
     &--dark-theme{
       color: getColor(font-light);
     }
-
   }
 
-  
   &--padding-reset{
     padding: 0;
   }

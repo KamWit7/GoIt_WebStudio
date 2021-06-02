@@ -157,8 +157,17 @@
       height: 120px;
       background-color: getColor(button-bg);
 
+      &--margin-top {
+        margin-top: 0;
+      }
+
       &--margin-first-element {
-        margin-top: 30px;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+
+      &--margin-second-element {
+        margin-top: 0;
         margin-bottom: 30px;
       }
 
