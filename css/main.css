@@ -106,13 +106,17 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 786px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
-    width: 786px;
+    width: 768px;
     margin: 0 auto;
   }
   .container--padding {
-    padding: 60px 15px;
+    padding: 60px 0;
+  }
+  .container--flex {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -144,7 +148,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0 0 0;
+    padding: 94px 0 94px 0;
   }
 }
 
@@ -258,7 +262,6 @@ img {
   line-height: 1.625;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  padding: 6px 22px;
   border-style: none;
   background-color: #F5F4FA;
   font-family: "Roboto", sans-serif;
@@ -272,11 +275,52 @@ img {
   margin-right: 8px;
 }
 
+.portfolio__button--margin-top {
+  margin-top: 15px;
+}
+
+.portfolio__button--wszystkie-size {
+  width: 103px;
+  height: 38px;
+}
+
+.portfolio__button--strony-size {
+  width: 128px;
+  height: 38px;
+}
+
+.portfolio__button--aplikacje-size {
+  width: 145px;
+  height: 38px;
+}
+
+.portfolio__button--dizajn-size {
+  width: 103px;
+  height: 38px;
+}
+
+.portfolio__button--marketing-size {
+  width: 130px;
+  height: 38px;
+}
+
 .portfolio__button:hover, .portfolio__button:active {
   color: #FFF;
   background-color: #2196F3;
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio__button--margin-top {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__button--margin-top {
+    margin-top: 0;
+  }
 }
 
 .titles {
@@ -430,7 +474,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay-1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: auto;
@@ -441,12 +485,15 @@ img {
   padding-bottom: 118px;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
   }
   .hero--padding-top-bottom {
     padding-top: 118px;
@@ -454,16 +501,25 @@ img {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc.jpg);
   }
   .hero--padding-top-bottom {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media scren and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-pc@2x.jpg);
   }
 }
 
@@ -903,10 +959,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.photo-frame--margin {
-  margin: 15px;
-}
-
 .photo-frame--margin-first-element {
   margin: 30px 15px 15px 15px;
 }
@@ -954,16 +1006,6 @@ img {
   .photo-frame {
     width: 354px;
   }
-  .photo-frame--margin {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .photo-frame--margin-top {
-    margin-top: 15px;
-  }
-  .photo-frame--margin-bottom {
-    margin-bottom: 15px;
-  }
   .photo-frame--margin-first-element {
     margin: 30px 15px 15px 15px;
   }
@@ -982,17 +1024,14 @@ img {
   .team-members {
     flex-wrap: nowrap;
   }
-  .team-members--margin {
-    margin: 50px 0;
-  }
   .team-members--text-center {
     text-align: center;
   }
   .photo-frame {
     width: 270px;
   }
-  .photo-frame--margin {
-    margin: 0 15px;
+  .photo-frame--margin-last-element {
+    margin: 15px;
   }
 }
 
@@ -1167,35 +1206,22 @@ img {
 }
 
 .portfolio-list {
+  width: 418px;
   display: flex;
-  justify-content: center;
-}
-
-.portfolio-list--margin-top {
-  margin-top: 94px;
-}
-
-.portfolio {
-  display: flex;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
-.portfolio--margin-top {
-  margin-top: 56px;
-}
-
-.portfolio--margin-bottom {
-  margin-bottom: 96px;
+.portfolio-list--margin-left {
+  margin-left: 15px;
 }
 
 .portfolio__items {
   box-sizing: border-box;
   overflow: hidden;
-  width: 370px;
+  width: 450px;
   background: #FFF;
   border: 1px solid #EEEEEE;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 .portfolio__items:hover {
@@ -1208,12 +1234,24 @@ img {
   border: 1px solid #EEEEEE;
 }
 
-.portfolio__items:nth-child(3n+1) {
-  margin-left: 15px;
+.portfolio__items--margin-first-element {
+  margin: 40px 15px 15px 15px;
 }
 
-.portfolio__items:nth-child(3n) {
-  margin-right: 15px;
+.portfolio__items--margin-second-element {
+  margin: 15px;
+}
+
+.portfolio__items--margin-third-element {
+  margin: 15px;
+}
+
+.portfolio__items--margin-other-elements {
+  margin: 15px;
+}
+
+.portfolio__items--margin-last-element {
+  margin: 15px 15px 0;
 }
 
 .portfolio__title {
@@ -1235,8 +1273,6 @@ img {
 }
 
 .animated {
-  width: 370px;
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -1254,12 +1290,80 @@ img {
 
 .animated__text {
   margin: 0;
-  padding: 49px 45px 49px 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #FFF;
+}
+
+.animated__text--pading {
+  padding: 77px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio-list {
+    width: 768px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .portfolio-list--margin-left {
+    margin-left: 0px;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio__items {
+    width: 354px;
+  }
+  .portfolio__items--margin-first-element {
+    margin: 30px 15px 15px 15px;
+  }
+  .portfolio__items--margin-second-element {
+    margin: 30px 15px 15px 15px;
+  }
+  .portfolio__items--margin-other-elements {
+    margin: 15px;
+  }
+  .portfolio__items--margin-last-element {
+    margin: 15px 15px 0;
+  }
+  .animated__text--pading {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    width: 1200px;
+    justify-content: center;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio__items {
+    width: 370px;
+  }
+  .portfolio__items--margin-first-element {
+    margin: 50px 15px 15px 15px;
+  }
+  .portfolio__items--margin-second-element {
+    margin: 50px 15px 15px 15px;
+  }
+  .portfolio__items--margin-other-elements {
+    margin: 15px;
+  }
+  .portfolio__items--margin-third-element {
+    margin: 50px 15px 15px 15px;
+  }
+  .portfolio__items--margin-last-element {
+    margin: 15px 15px;
+  }
+  .animated__text--pading {
+    padding: 49px 45px 49px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

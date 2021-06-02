@@ -145,23 +145,30 @@
 
                     <li class="do-photos__items do-photos__wrapper--margin-left do-photos__wrapper--margin-right">
                         <div class="do-photos__wrapper"><img
-                            src="images/SqooshImgages/CzymSięZajmujemy/img1.jpg" alt="Working with tablet" width="370"
-                            height="294">
+                            src="images/do-photos/laptop.jpg" 
+                            srcset="images/do-photos/laptop@2x.jpg 2x"
+                            alt="Working with tablet" 
+                            width="370" height="294">
                         <div class="do-photos__description">Aplikacje komputerowe</div>
                         </div>
                     </li>
 
                     <li class="do-photos__items do-photos__wrapper--margin-left do-photos__wrapper--margin-right">
-                        <div class="do-photos__wrapper"><img src="images/SqooshImgages/CzymSięZajmujemy/img2.jpg"
-                            alt="Working with phone and computer" width="370" height="294">
+                        <div class="do-photos__wrapper"><img 
+                            src="images/do-photos/phone.jpg"
+                            srcset="images/do-photos/phone@2x.jpg 2x"
+                            alt="Working with phone and computer" 
+                            width="370" height="294">
                         <div class="do-photos__description">Aplikacje mobilne</div>
                         </div>
                     </li>
 
                     <li class="do-photos__items do-photos__wrapper--margin-left do-photos__wrapper--margin-right">
                         <div class="do-photos__wrapper"><img
-                            src="images/SqooshImgages/CzymSięZajmujemy/img3.jpg" alt="Choosing a color" width="370"
-                            height="294">
+                            src="images/do-photos/tablet.jpg"
+                            srcset="images/do-photos/tablet@2x.jpg 2x"
+                            alt="Choosing a color" 
+                            width="370" height="294">
                         <div class="do-photos__description">Rozwiązania graficzne</div>
                         </div>
                     </li>
@@ -178,7 +185,18 @@
             <ul class="team-members team-members--text-center">
 
                 <li class="photo-frame photo-frame--margin-first-element">
-                    <img src="images/SqooshImgages/NaszZespół/img1.jpg" alt="Photo: John Doe" width="270" height="260">
+
+                    <picture>
+                        <source
+                        srcset="./images/team/pc/img1.jpg 1x, ./images/team/pc/img1@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                         >
+                        <source
+                        srcset="./images/team/tablet/img1.jpg 1x, ./images/team/tablet/img1@2x.jpg 2x"
+                        media="(min-width: 768px)"
+                         >
+                        <img src="./images/team/mobile/img1.jpg" srcset="./images/team/mobile/img1.jpg 1x, ./images/team/mobile/img1@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
                     <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Product
                         Designer</p>
@@ -217,7 +235,15 @@
                 </li>
 
                 <li class="photo-frame photo-frame--margin-second-element">
-                    <img src="images/SqooshImgages/NaszZespół/img2.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img2.jpg 1x, ./images/team/pc/img2@2x.jpg 2x" 
+                        media="(min-width: 1200px)"
+                         >
+                        <source srcset="./images/team/tablet/img2.jpg 1x, ./images/team/tablet/img2@2x.jpg 2x" 
+                        media="(min-width: 768px)"
+                         >
+                        <img src="./images/team/mobile/img2.jpg" srcset="./images/team/mobile/img2.jpg 1x, ./images/team/mobile/img2@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
                     <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Frontend
                         Developer</p>
@@ -254,7 +280,15 @@
                     </ul>
                 </li>
                 <li class="photo-frame photo-frame--margin-penultimate-element">
-                    <img src="images/SqooshImgages/NaszZespół/img3.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img3.jpg 1x, ./images/team/pc/img3@2x.jpg 2x" 
+                        media="(min-width: 1200px)"
+                         >
+                        <source srcset="./images/team/tablet/img3.jpg 1x, ./images/team/tablet/img3@2x.jpg 2x" 
+                        media="(min-width: 768px)"
+                         >
+                        <img src="./images/team/mobile/img3.jpg" srcset="./images/team/mobile/img3.jpg 1x, ./images/team/mobile/img3@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
                     <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">Marketing
                     </p>
@@ -291,7 +325,15 @@
                     </ul>
                 </li>
                 <li class="photo-frame photo-frame--margin-last-element">
-                    <img src="images/SqooshImgages/NaszZespół/img4.jpg" alt="Photo: John Doe" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/pc/img4.jpg 1x, ./images/team/pc/img4@2x.jpg 2x" 
+                        media="(min-width: 1200px)"
+                         >
+                        <source srcset="./images/team/tablet/img4.jpg 1x, ./images/team/tablet/img4@2x.jpg 2x" 
+                        media="(min-width: 768px)"
+                         >
+                        <img src="./images/team/mobile/img4.jpg" srcset="./images/team/mobile/img4.jpg 1x, ./images/team/mobile/img4@2x.jpg 2x" alt="Photo: John Doe">
+                    </picture>
                     <h3 class="photo-frame__employe photo-frame__employe--margin-top">John Doe</h3>
                     <p class="photo-frame__job photo-frame__job--margin-top photo-frame__job--margin-bottom">UI Designer
                     </p>

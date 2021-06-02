@@ -1,58 +1,58 @@
-@import '../utils/variable';
+@import "../utils/variable";
 
 .portfolio-list {
+  width: 418px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
 
-  &--margin-top{
-    margin-top: 94px;
+  &--margin-left {
+    margin-left: 15px;
   }
 }
 
-.portfolio{
-  display: flex;
-  flex-wrap: wrap;
-  
-  &--margin-top{
-    margin-top: 56px;
-  }
+.portfolio {
+  &__items {
+    box-sizing: border-box;
+    overflow: hidden;
 
-  &--margin-bottom{
-    margin-bottom: 96px;
-  }
+    width: 450px;
+    background: getColor(main-bg);
+    border: 1px solid getColor(border-light);
 
-  &__items{
-  box-sizing: border-box;
-  overflow: hidden;
-
-  width: 370px;
-  background: getColor(main-bg);
-  border: 1px solid getColor(border-light);
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-    &:hover{
+    &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                  0px 4px 4px rgba(0, 0, 0, 0.06),
-                  1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       cursor: pointer;
     }
 
-    &:hover .animated__box{
+    &:hover .animated__box {
       transform: translateY(0);
       border: 1px solid getColor(border-light);
-     }
-
-    &:nth-child(3n+1){
-      margin-left: 15px;
     }
 
-    &:nth-child(3n){
-      margin-right: 15px;
+    &--margin-first-element {
+      margin: 40px 15px 15px 15px;
+    }
+
+    &--margin-second-element {
+      margin: 15px;
+    }
+
+    &--margin-third-element {
+      margin: 15px;
+    }
+
+    &--margin-other-elements {
+      margin: 15px;
+    }
+
+    &--margin-last-element {
+      margin: 15px 15px 0;
     }
   }
 
-  &__title{
+  &__title {
     width: 322px;
     height: 36px;
     font-size: 18px;
@@ -61,7 +61,7 @@
     margin: 20px 24px;
   }
 
-  &__text{
+  &__text {
     width: 322px;
     height: 30px;
     font-size: 18px;
@@ -69,16 +69,13 @@
     letter-spacing: 0.03em;
     margin: 4px 24px 20px;
   }
-
 }
 
-.animated{
-  width: 370px;
-  height: 294px;
+.animated {
   position: relative;
   overflow: hidden;
 
-  &__box{
+  &__box {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -90,9 +87,9 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__text{
+  &__text {
     margin: 0;
-    padding: 49px 45px 49px 24px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -100,8 +97,98 @@
     letter-spacing: 0.03em;
 
     color: getColor(font-light);
+
+    &--pading {
+      padding: 77px 24px;
+    }
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio-list {
+    width: 768px;
+    justify-content: center;
+    flex-wrap: nowrap;
 
+    &--margin-left {
+      margin-left: 0px;
+    }
+  }
 
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__items {
+      width: 354px;
+
+      &--margin-first-element {
+        margin: 30px 15px 15px 15px;
+      }
+
+      &--margin-second-element {
+        margin: 30px 15px 15px 15px;
+      }
+
+      &--margin-other-elements {
+        margin: 15px;
+      }
+
+      &--margin-last-element {
+        margin: 15px 15px 0;
+      }
+    }
+  }
+
+  .animated {
+    &__text {
+      &--pading {
+        padding: 49px 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    width: 1200px;
+    justify-content: center;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__items {
+      width: 370px;
+
+      &--margin-first-element {
+        margin: 50px 15px 15px 15px;
+      }
+
+      &--margin-second-element {
+        margin: 50px 15px 15px 15px;
+      }
+
+      &--margin-other-elements {
+        margin: 15px;
+      }
+
+      &--margin-third-element {
+        margin: 50px 15px 15px 15px;
+      }
+
+      &--margin-last-element {
+        margin: 15px 15px;
+      }
+    }
+  }
+
+   .animated {
+    &__text {
+      &--pading {
+        padding: 49px 45px 49px 24px;
+      }
+    }
+  }
+}
