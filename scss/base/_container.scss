@@ -13,6 +13,12 @@
     align-items: center;
   }
 
+  &--flex-spade-between {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -27,6 +33,7 @@
       flex-direction: row;
       justify-content: space-between;
     }
+
   }
 }
 @media screen and (min-width: 1200px) {
@@ -39,9 +46,9 @@
 
     &--flex {
       flex-wrap: nowrap;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: row;
-
     }
+
   }
 }

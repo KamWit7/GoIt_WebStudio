@@ -142,6 +142,15 @@
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4923" d="M4.817 15.389l-0.169-0.162-2.544 2.41 8.962 8.55 18.829-17.962-2.527-2.411-16.302 15.536-6.249-5.962z"></path>
 </symbol>
 
+<!-- mobile -->
+
+<symbol id="icon-menu_24px" viewBox="0 0 48 32">
+<path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+</symbol>   
+
+<symbol id="icon-close_24px" viewBox="0 0 32 32">
+<path d="M31.439 3.166l-3.166-3.166-12.553 12.553-12.553-12.553-3.166 3.166 12.553 12.553-12.553 12.553 3.166 3.166 12.553-12.553 12.553 12.553 3.166-3.166-12.553-12.553 12.553-12.553z"></path>
+</symbol>
 
 </defs>
 </svg>

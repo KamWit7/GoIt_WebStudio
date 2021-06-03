@@ -18,22 +18,22 @@
 </head>
 
 <body>
-    <!-- <header class="header header--underline">
-        <div class="container  container--flex">
-
+    <header class="header header--underline">
+        <div class="container container--flex-spade-between">
+    
             <a class="logo" href="#">
                 <span class="logo__label logo__label--start">Web</span><span
                     class="logo__label logo__label--end">Studio</span>
             </a>
-
+    
             <nav class="navigation">
-                <ul class="navigation__list navigation--margin-left">
-                    <li class="navigation__items navigation__items--margin-left">
+                <ul class="navigation__list">
+                    <li class="navigation__items navigation__items--underline navigation__items--margin-left ">
                         <a class="navigation__links   transition-bg-color-delay" href="index.html">
                             <p class="navigation__text">Agencja</p>
                         </a>
                     </li>
-                    <li class="navigation__items navigation__items--underline navigation__items--margin-left">
+                    <li class="navigation__items navigation__items--margin-left">
                         <a class="navigation__links  transition-bg-color-delay" href="portfolio.html">
                             <p class="navigation__text">Portfolio</p>
                         </a>
@@ -45,21 +45,21 @@
                     </li>
                 </ul>
             </nav>
-
-            <ul class="contacts contacts--margin-left">
-
-                <li class="contacts__items">
-
-                    <a class="contacts__links contacts__links--margin-right 
+    
+            <ul class="contacts contacts--margin-left contacts--margin-top">
+    
+                <li class="contacts__items contacts__items--margin-bottom contacts__items--margin-right">
+    
+                    <a class="contacts__links
                                   transition-bg-color-delay" href="mailto:info@devstudio.com">
                         <svg width="16" height="12">
                             <use href="./images/icons.svg#icon-poczta"></use>
                         </svg>
                         info@devstudio.com
                     </a>
-
+    
                 </li>
-
+    
                 <li class="contacts__items">
                     <a class="contacts__links   transition-bg-color-delay" href="tel:+48111111111">
                         <svg width="16" height="12">
@@ -70,9 +70,13 @@
                 </li>
             </ul>
 
+            <button class="burger__button" type="button" menu-modal-open>
+                <svg class="burger burger--margin" width="40" height="40">
+                    <use width="24" height="16" href="./images/icons.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
         </div>
-
-    </header> -->
+    </header> 
 
     <main class="main container">
         <section class="section">
@@ -379,7 +383,41 @@
     </div>
 
 </footer>
-    <script src="./js/modal.js"></script>
+        <div class="backdrop is-hidden" menu-modal>
+            <div class="menu__mobile menu__mobile--relative menu__mobile--padding">
+        
+                <button class="menu__button-close" menu-modal-close>
+                    <svg class="menu__svg" width="18.67" height="18.67">
+                        <use href="./images/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+        
+                <ul class="menu-list">
+                    <li class="menu-list__items"><a class="menu__links" href="index.html">Agencja</a></li>
+                    <li class="menu-list__items menu-list__items--margin"><a class="menu__links"
+                            href="portfolio.html">Portfolio</a></li>
+                    <li class="menu-list__items"><a class="menu__links" href="#">Kontakt</a></li>
+                </ul>
+        
+                <ul class="menu-adress">
+                    <li class="menu-adress__items menu-adress__items--phone menu-adress__items--margin-phone">+48 111 111 111
+                    </li>
+                    <li class="menu-adress__items menu-adress__items--mail menu-adress__items--margin-mail">info@devstudio.com
+                    </li>
+                </ul>
+        
+                <ul class="menu-social">
+                    <li class="menu-social__items"><a class="menu__links menu__links--blue" href="#">Instagram</a></li>
+                    <li class="menu-social__items"><a class="menu__links menu__links--blue" href="#">Twitter</a></li>
+                    <li class="menu-social__items"><a class="menu__links menu__links--blue" href="#">Facebook</a></li>
+                    <li class="menu-social__items"><a class="menu__links menu__links--blue" href="#">Linkedln</a></li>
+                </ul>
+        
+            </div>
+        </div>
+
+
+    <script src="./js/modal copy.js"></script>
 </body>
 
 </html>

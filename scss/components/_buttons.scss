@@ -66,6 +66,19 @@
   }
 }
 
+.burger__button{
+  border: none;
+  background-color: getColor(main-bg);
+}
+
+.menu__button-close {
+  border: none;
+  background-color: getColor(main-bg);
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+}
+
 .modal__button-close {
   box-sizing: border-box;
   stroke: getColor(font-dark);
@@ -89,7 +102,6 @@
     animation: puls 2000ms infinite 250ms;
   }
 }
-
 
 .portfolio__button {
   font-weight: 500;
@@ -151,7 +163,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .portfolio__button {
-   
     &--margin-top {
       margin-top: 0;
     }
@@ -159,8 +170,7 @@
 }
 
 @media screen and(min-width: 1200px) {
-   .portfolio__button {
-
+  .portfolio__button {
     &--margin-top {
       margin-top: 0;
     }

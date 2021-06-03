@@ -52,11 +52,10 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.166;
-
   letter-spacing: 0.02em;
 
   &__items {
-    &:first-child {
+    &--margin-bottom {
       margin-bottom: 10px;
     }
   }
@@ -73,89 +72,64 @@
   }
 }
 
+.burger {
+  box-sizing: border-box;
+  padding: 12px 8px;
+
+  &--margin {
+    margin: 10px;
+  }
+
+  &:hover {
+    fill: getColor(active);
+    cursor: pointer;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
+  .navigation {
+    display: inline-block;
+    width: 282px;
+  }
+  .contacts {
+    display: block;
+
+    &--margin-top {
+      margin-top: 21px;
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .navigation {
     display: inline-block;
     width: 282px;
   }
 
   .contacts {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-
-    &__list {
-      display: flex;
-    }
-
-    &--margin-left {
-      margin-left: 93px;
-    }
-
-    &__items {
-      position: relative;
-      padding: 34px 0;
-
-      &--margin-left {
-        margin-left: 46px;
-      }
-
-      &--underline > a::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 53px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: getColor(active);
-      }
-    }
-
-    &__links {
-      color: getColor(font-dark);
-
-      &:hover,
-      &:active {
-        color: getColor(active);
-      }
-    }
-
-    &__text {
-      margin: 0;
-    }
-  }
-
-  .contacts {
     display: flex;
+    font-size: 14px;
+    line-height: 1.142;
 
-    &--margin-left {
-      margin-left: auto;
+    &--margin-top {
+      margin-top: 32px;
     }
 
     &__items {
-      padding: 32px 0;
-    }
-
-    &__links {
-      color: getColor(font-grey);
-      fill: getColor(font-grey);
-
-      &:hover,
-      &:active {
-        color: getColor(active);
-        fill: getColor(active);
+      &--margin-bottom {
+        margin-bottom: 0;
       }
-
       &--margin-right {
-        margin-right: 50px;
+        margin-right: 30px;
       }
     }
+  }
+
+  .burger {
+    display: none;
   }
 }
